@@ -1,0 +1,95 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #2A2B3D
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 40px 0
+    +above($breakpoints.md)
+      padding 70px 0
+    +above($breakpoints.xxl)
+      padding 135px 0 134px
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 15px 0 20px
+    +above($breakpoints.md)
+      padding 18px 0 30px
+    +above($breakpoints.xxl)
+      padding 20px 0 39px
+
+  &__line
+    background-color $color-orange
+    width 40px
+    height: 2px
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+
+  &__text
+    padding 15px 0 10px
+    +above($breakpoints.sm)
+      padding 15px 0 15px
+    +above($breakpoints.md)
+      padding 18px 0 18px
+    +above($breakpoints.xxl)
+      padding 19px 0 20px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      width 574px
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 10px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 188px !important
+      +above($breakpoints.md)
+        width 230px !important
+      +above($breakpoints.xxl)
+        width 282px !important
+
+  &__agree-wrapper
+    +above($breakpoints.sm)
+      padding-left 10px
+    +above($breakpoints.md)
+      padding-left 15px
+    +above($breakpoints.xxl)
+      padding-left 19px
+
+  &__img
+    width: 280px;
+    height: auto;
+    margin: 5px 0 0 -27px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width: 516px;
+      bottom: 0;
+      right: -111px;
+    +above($breakpoints.md)
+      width: 750px;
+      right: -158px;
+    +above($breakpoints.xxl)
+      width 985px
+      right: -133px

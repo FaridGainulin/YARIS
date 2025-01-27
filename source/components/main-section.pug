@@ -1,0 +1,23 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-s-regular.font-s-76
+        | Откройте школу рисования 
+        br.no-br
+        | для детей и взрослых 
+        br.no-br
+        span.color-blue по франшизе «ЯРИС»
+      .main-section__sub-title.font-w-bold.font-s-36
+        | и зарабатывайте 
+        span.color-orange от 350 000₽ 
+        | ежемесячно
+      .main-section__line
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1478" height="1544" alt="image")

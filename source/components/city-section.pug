@@ -1,0 +1,20 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-s-regular.font-s-72
+        | Откройте популярную школу 
+        br
+        | рисования в своем городе
+      .city-section__sub-title.font-w-bold.font-s-36
+        | вместе с командой франшизы 
+        span.color-orange «ЯРИС»
+      .city-section__line
+      .city-section__text.font-s-18 Проверьте, свободен ли ваш город для открытия
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="985" height="625" alt="image")

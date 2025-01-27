@@ -1,0 +1,73 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="818" height="441" alt="image")
+      img.finances-section__icon(src="images/finances-section-icon.svg" loading="lazy" width="160" height="160" alt="icon")
+      .finances-section__box
+        .finances-section__box-text
+          h2.finances-section__title.font-w-s-regular.font-s-68.color-blue
+            | Какую прибыль 
+            br.no-br
+            | может приносить 
+            br.no-br
+            | ваша школа
+          .finances-section__sub-title.font-w-s-regular.font-s-30
+            span.color-blue и другие 
+            | важные цифры франшизы
+        .finances-section__cards-wrapper
+          .swiper-bullet
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44 до 2 месяцев
+                .font-s-18
+                  | понадобится
+                  br
+                  | на запуск
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44 26,5%
+                .font-s-18
+                  | рентабельность
+                  br
+                  | по чистой прибыли
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44
+                  | 1 320 000 
+                  span.font-w-regular ₽
+                .font-s-18
+                  | средний размер
+                  br
+                  | ежемесячной выручки
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44 15 месяцев
+                .font-s-18
+                  | средний срок
+                  br
+                  | окупаемости
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44
+                  | 2 140 000 
+                  span.font-w-regular ₽
+                .font-s-18
+                  | средний размер
+                  br
+                  | инвестиций
+              .finances-section__card.swiper-slide
+                .finances-section__card-title.font-w-s-regular.font-s-44
+                  | 350 000 
+                  span.font-w-regular ₽
+                .font-s-18
+                  | средний размер
+                  br
+                  | ежемесячной прибыли
+            .bullet-pagination.bullet-pagination--right
+      .finances-section__bottom
+        .font-w-semi-bold.font-s-28
+          | Хотите получить детальные расчеты?
+        .font-s-18 Скачайте финансовую модель франшизы «ЯРИС»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

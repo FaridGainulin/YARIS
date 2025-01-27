@@ -1,0 +1,71 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      h2.about-section__title.font-w-s-regular.font-s-68
+        | Подробнее 
+        span.color-blue о нашей школе
+      .about-section__sub-title
+        img.about-section__logo(src="images/about-section-logo.svg" loading="lazy" width="88" height="88" alt="logo")
+        .font-w-semi-bold.font-s-20
+          | Школа рисования для детей и взрослых «ЯРИС» открылась 
+          br.no-br
+          | в 2021 году в г. Клин Московской области. Наша миссия — 
+          br.no-br
+          | дарить людям радость через процесс рисования. 
+          br.no-br
+          | Все процессы проходят в удобном для учеников режиме, 
+          br.no-br
+          | используются авторские методики, созданные автором школы 
+          br.no-br
+          | Ярославом Ступиным.
+      .about-section__block
+        .font-s-18
+          | За 3 года работы мы стали надёжным партнёром 
+          br.no-br
+          | для более 500 постоянных учеников. Наша школа 
+          br.no-br
+          | продолжает развиваться, а спрос на её услуги растёт 
+          br.no-br
+          | с каждым годом. Все больше родителей отдают детей 
+          br.no-br
+          | рисовать, поскольку это важно для их психического 
+          br.no-br
+          | и физического развития
+        .font-s-18
+          | А взрослые записываются 
+          br.no-br
+          | на занятия, чтобы реализовать 
+          br.no-br
+          | свою мечту, снять стресс 
+          br.no-br
+          | после работы и научиться 
+          br.no-br
+          | чему‑то новому.
+      .font-s-18
+        | Для партнеров франшизы готовы все инструкции, 
+        br.no-br
+        | регламенты и чек-листы, которые позволят запустить 
+        br.no-br
+        | собственную школу рисования в кратчайшие сроки.
+      .about-section__text.font-w-semi-bold.font-s-20
+        | Команда «ЯРИС» поможет вам выстроить все 
+        br.no-br
+        | процессы, передаст проверенные методики 
+        br.no-br
+        | обучения, внедрит систему привлечения 
+        br.no-br
+        | клиентов и поделится секретами роста и 
+        br.no-br
+        | масштабирования в этой интересной нише.
+      .about-section__bottom-text.font-w-bold.font-s-22 Ждем ваши вопросы по франшизе!
+      form.about-section__form(data-feedback-form)
+        textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+        .about-section__form-column
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Задать вопрос
+      .about-section__agree-wrapper
+        include ../components/agree.pug
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1397" height="1294" alt="image")
+      img.about-section__icon-arrow(src="images/about-section-icon-arrow.png" loading="lazy" width="385" height="240" alt="icon")

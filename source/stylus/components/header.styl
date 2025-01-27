@@ -1,0 +1,110 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+
+  &__block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 22px
+    +above($breakpoints.xxl)
+      gap: 24px
+
+  &__logo
+    width 105px
+    height: 29px
+    +above($breakpoints.sm)
+      width 140px
+      height: 38px
+    +above($breakpoints.md)
+      width 160px
+      height: 43px
+    +above($breakpoints.xxl)
+      width 182px
+      height: 49px
+    path
+      fill: #fff
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position relative
+      z-index 1
+      &:after
+        content: ""
+        position: absolute
+        z-index -1
+        width 4px
+        height: 4px
+        border-radius: 50%
+        background-color #fff
+        transform: translateY(-50%)
+        top: 50%
+        left: -12px
+        +above($breakpoints.md)
+          left: -13px
+        +above($breakpoints.xxl)
+          left: -14px
+
+  &__connection
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    +above($breakpoints.sm)
+      gap: 3px
+    +above($breakpoints.md)
+      gap: 4px
+    +above($breakpoints.xxl)
+      gap: 5px
+
+  &__connection-phone
+    display: flex
+    align-items: center
+    gap: 8px
+    +above($breakpoints.sm)
+      gap: 12px
+    +above($breakpoints.md)
+      gap: 14px
+    +above($breakpoints.xxl)
+      gap: 16px
+
+  &__connection-icon
+    width 10px
+    height: 10px
+    +above($breakpoints.sm)
+      width 12px
+      height: 12px
+    +above($breakpoints.md)
+      width 13px
+      height: 13px
+    +above($breakpoints.xxl)
+      width 14px
+      height: 14px
+    path
+      fill: #FFD166
+
+  &__call-me
+    position relative
+    transition transform 0.5s, top 0.8s
+    cursor pointer
+    text-decoration: underline
+    color: #FFD166
+    &:hover
+      transform: scale(1.02)
+    &:active
+      top: 3px
+
+  &__brand-mobile
+    text-align: center
+    padding: 1px 0 3px;
+    margin-top: 5px;
+    background-color: #ffd166;
+    color: #232433;
+    border-radius: 3px;
+    +above($breakpoints.sm)
+      display: none
